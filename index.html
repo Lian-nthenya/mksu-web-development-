@@ -1,0 +1,105 @@
+<!DOCTYPEhtml/>
+<html lang= "en">
+ <head>
+  <meta charset= "UTF-8">
+  <meta name= "viewport""content="width=device-width, initial-scale=1>
+  <link rel= "stylesheet" href= "styles.css">
+  <title> Wellness Hub </title>
+ </head>
+ <body>
+  <header>
+    <h1> Wellness Hub </h1>
+    <p> Your journey to a healthier and happier life starts here. </p>
+  </header>
+
+  <section id= "about">
+   <h2> About Us </h2>
+   <p> Welcome to Wellness Hub, your trusted partner on the path to a healthier and happier life. </p>
+  </section>
+
+  <section id= "recipes">
+   <h3> Healthy Recipes </h3>
+   <div class= "recipe" Id= "recipe 1">
+    <h4> Avocado $ Chickpie Salad </h4>
+    <p> A delicious and nutritious salad loaded with fresh ingredients</p>
+    <button onclick= "show recipe ('Recipe 1')"> Show Recipe </button>
+   <div class= "recipe-content" Id= "recipe 1 content">
+    <p> Ingredients; </p>
+    <ul>
+     <li> 1 ripe avocado</li>
+     <li> 1 can of chickpeas, drained </li>
+     <li> Cherry tomatoes </li>
+     <li> Red onion </li>
+     <li> Feta cheese </li>
+     <li> Olive oil, lemon juice, salt and pepper to taste </li> 
+    </ul>
+    <p> Instructions </p>
+    <ol>
+     <li> Cut the avocado, tomatoes and red onion. </li>
+     <li> Mix all the ingredients in a bowl. </li>
+     <li> Drizzle olive oiland lemon juice then season with salt and pepper. </li>
+     <li> Sprinkle feta cheese on top and toss gently. </li>
+     <li> Enjoy your nutritions salad! </li>
+    </ol> 
+   </div>
+   </div>
+   </div>
+  </section>
+
+  <section id= "relaxation">
+   <h5> Relaxation Exercise </h5>
+   <p> Take a moment to relax and unwind with this simple deep-breath. </p>
+   <button onclick= "startrelaxation()"> Start Relaxation </button>
+  </section>
+  <script src= "script.js" </script>
+  <body>
+ {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  backround-color: #f5f5f5;
+ }
+ header
+ {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1 em 0;
+ }
+ section
+ {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ }
+ button
+ {
+  padding: 10px;
+  backround-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+ }
+ button: hover 
+ {
+  background-color: #45a049;
+ }
+ -recipe-content
+ {
+  display: none;
+ }
+ function ShowRecipe(Recipe Id)
+ {
+  var recipeContent=document.getElementById(recipeId+'content');
+  recipeContent.style.display=(recipeContent.style.display==='non');
+ }
+ function startRelaxation()
+ { 
+  alert("Find a comfortable position, close your eyes and take a deep breathe");
+ }
+</body>
+</html>
